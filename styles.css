@@ -1,0 +1,22 @@
+body {
+    font-family: "Copperplate", sans-serif;
+    background-color: pink;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 400px;
+}
+
+button {
+       padding: 1px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.result {
+display: none;
+}
