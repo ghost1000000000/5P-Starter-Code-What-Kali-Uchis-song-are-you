@@ -1,0 +1,89 @@
+<!DOCTYPE html> <html><head>
+        <title>5.P Starter Code [What Kali Uchis song are you?]</title>
+
+    <style>body {
+    font-family: "Copperplate", sans-serif;
+    background-color: pink;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 400px;
+}
+
+button {
+       padding: 1px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.result {
+display: none;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>What Kali Uchis song are you?!</h1>
+        </div>
+        <img src="https://media1.tenor.com/m/Trb9LytmH4YAAAAC/cat-dj.gif:*" alt="cat being a DJ">
+
+
+        <div class="questions">
+
+            <h3> Would you rather have Dancing music at a party 💃🏽 or chill and lovely music🕺🏽??</h3>
+
+
+            <div class="buttons">
+                <h5>
+                    <input placeholder="chill or dancing music  " class="music">
+                </h5>
+            </div>
+            <h3>spanish or english </h3>
+
+        </div>
+        <div class="buttons">
+            <h5>
+                <input class="Lenguague">
+            </h5>
+        </div>
+                   <div>
+                <h4><button class="submit">result</button></h4>
+            </div>
+ <div class="result">
+            this is where the user will see their quiz result!
+
+
+
+        </div>
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var button = document.querySelector(".submit");
+var fullParagraph = document.querySelector(".result");
+
+button.onclick = function () {
+  fullParagraph.style.display = "block";
+  var music = document.querySelector(".music").value;
+  var insideout = document.querySelector(".Lenguague").value;
+
+  if (music === "chill" && insideout === "spanish") {
+    fullParagraph.innerHTML = "your kali song is young rich & inlove";
+  } else if (music === "chill" && insideout === "english") {
+    fullParagraph.innerHTML = "your kali uchis song is Dame beso//muevete ";
+  }
+
+  if (music === "Chill" && insideout === "Spanish") {
+    fullParagraph.innerHTML = "Your Kali Song is Igual Que Un Angel.";
+    console.log("hi");
+  } else if (music === "Dancing" && insideout === "English") {
+    // let animal = document.querySelector(".animal").value;
+    fullParagraph.innerHTML = "your song is Young Rich & Inlove";
+    fullParagraph.innerHTML = "your song is Young Rich & Inlove";
+    fullParagraph.innerHTML = "your song is Young Rich & Inlove";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1dHRvbiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsImZ1bGxQYXJhZ3JhcGgiLCJvbmNsaWNrIiwic3R5bGUiLCJkaXNwbGF5IiwibXVzaWMiLCJ2YWx1ZSIsImluc2lkZW91dCIsImlubmVySFRNTCIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiJBQUFBLElBQUlBLE1BQU0sR0FBR0MsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLENBQWI7QUFDQSxJQUFJQyxhQUFhLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixDQUFwQjs7QUFFQUYsTUFBTSxDQUFDSSxPQUFQLEdBQWlCLFlBQVc7QUFDeEJELEVBQUFBLGFBQWEsQ0FBQ0UsS0FBZCxDQUFvQkMsT0FBcEIsR0FBOEIsT0FBOUI7QUFDQSxNQUFJQyxLQUFLLEdBQUdOLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixRQUF2QixFQUFpQ00sS0FBN0M7QUFDQSxNQUFJQyxTQUFTLEdBQUdSLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ00sS0FBckQ7O0FBQ0EsTUFBSUQsS0FBSyxLQUFLLE9BQVYsSUFBcUJFLFNBQVMsS0FBSyxTQUF2QyxFQUFtRDtBQUM5Q04sSUFBQUEsYUFBYSxDQUFDTyxTQUFkLEdBQTBCLHVDQUExQjtBQUNKLEdBRkQsTUFFTyxJQUFJSCxLQUFLLEtBQUssT0FBVixJQUFxQkUsU0FBUyxLQUFLLFNBQXZDLEVBQWtEO0FBQ3JETixJQUFBQSxhQUFhLENBQUNPLFNBQWQsR0FBMEIsNkNBQTFCO0FBQ0g7O0FBQ0QsTUFBSUgsS0FBSyxLQUFLLE9BQVYsSUFBcUJFLFNBQVMsS0FBTSxTQUF4QyxFQUFvRDtBQUMvQ04sSUFBQUEsYUFBYSxDQUFDTyxTQUFkLEdBQTBCLHVDQUExQjtBQUNEQyxJQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWSxJQUFaO0FBQ0gsR0FIRCxNQUdPLElBQUlMLEtBQUssS0FBSyxTQUFWLElBQXVCRSxTQUFTLEtBQUssU0FBekMsRUFBcUQ7QUFDNUQ7QUFDQU4sSUFBQUEsYUFBYSxDQUFDTyxTQUFkLEdBQTBCLGtDQUExQjtBQUNJUCxJQUFBQSxhQUFhLENBQUNPLFNBQWQsR0FBMEIsa0NBQTFCO0FBQ0NQLElBQUFBLGFBQWEsQ0FBQ08sU0FBZCxHQUEwQixrQ0FBMUI7QUFDSjtBQUNKLENBbEJEIiwic291cmNlc0NvbnRlbnQiOlsibGV0IGJ1dHRvbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuc3VibWl0XCIpO1xubGV0IGZ1bGxQYXJhZ3JhcGggPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJlc3VsdFwiKTtcblxuYnV0dG9uLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICBmdWxsUGFyYWdyYXBoLnN0eWxlLmRpc3BsYXkgPSBcImJsb2NrXCI7XG4gICAgbGV0IG11c2ljID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5tdXNpY1wiKS52YWx1ZTtcbiAgICBsZXQgaW5zaWRlb3V0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5MZW5ndWFndWVcIikudmFsdWU7XG4gICAgaWYgKG11c2ljID09PSBcImNoaWxsXCIgJiYgaW5zaWRlb3V0ID09PSBcInNwYW5pc2hcIiApIHtcbiAgICAgICAgIGZ1bGxQYXJhZ3JhcGguaW5uZXJIVE1MID0gXCJ5b3VyIGthbGkgc29uZyBpcyB5b3VuZyByaWNoICYgaW5sb3ZlXCI7XG4gICAgfSBlbHNlIGlmIChtdXNpYyA9PT0gXCJjaGlsbFwiICYmIGluc2lkZW91dCA9PT0gXCJlbmdsaXNoXCIpIHtcbiAgICAgICAgZnVsbFBhcmFncmFwaC5pbm5lckhUTUwgPSBcInlvdXIga2FsaSB1Y2hpcyBzb25nIGlzIERhbWUgYmVzby8vbXVldmV0ZSBcIjtcbiAgICB9XG4gICAgaWYgKG11c2ljID09PSBcIkNoaWxsXCIgJiYgaW5zaWRlb3V0ID09PSAgXCJTcGFuaXNoXCIgKSB7XG4gICAgICAgICBmdWxsUGFyYWdyYXBoLmlubmVySFRNTCA9IFwiWW91ciBLYWxpIFNvbmcgaXMgSWd1YWwgUXVlIFVuIEFuZ2VsLlwiO1xuICAgICAgICBjb25zb2xlLmxvZyhcImhpXCIpO1xuICAgIH0gZWxzZSBpZiAobXVzaWMgPT09IFwiRGFuY2luZ1wiICYmIGluc2lkZW91dCA9PT0gXCJFbmdsaXNoXCIgKSB7XG4gICAgLy8gbGV0IGFuaW1hbCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuYW5pbWFsXCIpLnZhbHVlO1xuICAgIGZ1bGxQYXJhZ3JhcGguaW5uZXJIVE1MID0gXCJ5b3VyIHNvbmcgaXMgWW91bmcgUmljaCAmIElubG92ZVwiO1xuICAgICAgICBmdWxsUGFyYWdyYXBoLmlubmVySFRNTCA9IFwieW91ciBzb25nIGlzIFlvdW5nIFJpY2ggJiBJbmxvdmVcIjtcbiAgICAgICAgIGZ1bGxQYXJhZ3JhcGguaW5uZXJIVE1MID0gXCJ5b3VyIHNvbmcgaXMgWW91bmcgUmljaCAmIElubG92ZVwiO1xuICAgIH1cbn07Il19</script></body></html>
